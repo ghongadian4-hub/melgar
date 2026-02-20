@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- LOGIN PAGE -->
+<div class="container" id="loginPage">
+    <h2>Login to Portfolio</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+
+    <p class="social-links">
+        <a href="#">Instagram</a> |
+        <a href="#">Facebook</a> |
+        <a href="#">YouTube</a>
+    </p>
+</div>
+
+<!-- PORTFOLIO PAGE -->
+<div class="container" id="portfolioPage">
+    <h2>My Personal Information</h2>
+    <p><strong>Name:</strong> Mark Remuel R Melgar</p>
+    <p><strong>Email:</strong> melgarmark531@email.com</p>
+    <p><strong>Course:</strong> Diploma in Information Technology</p>
+
+    <hr>
+
+    <h3>User Information Form</h3>
+
+    <input type="text" id="firstName" placeholder="First Name">
+    <input type="text" id="middleName" placeholder="Middle Name">
+    <input type="text" id="lastName" placeholder="Last Name">
+    <input type="email" id="email" placeholder="Email">
+    <input type="number" id="age" placeholder="Age">
+
+    <button onclick="checker()">Submit</button>
+
+    <div id="result"></div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>First</th>
+                <th>Middle</th>
+                <th>Last</th>
+                <th>Email</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody id="userTableBody"></tbody>
+    </table>
+
+    <button class="logout" onclick="logout()">Logout</button>
+</div>
+
+<!-- POPUP -->
+<div class="popup" id="popupBox">
+    <p id="popupMessage"></p>
+    <button onclick="closePopup()">OK</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
